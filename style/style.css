@@ -2,7 +2,7 @@
     font-family: "Noto Serif", serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-variation-settings:"wdth" 100;
+    font-variation-settings: "wdth" 100;
 }
 
 body,
@@ -15,7 +15,7 @@ html {
     background-color: #f5f8ff;
 }
 
-.right-side{
+.right-side {
     display: flex;
     gap: 32px;
 }
@@ -60,7 +60,8 @@ html {
     color: #222;
     font-weight: 700;
 }
-.cart{
+
+.cart {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -80,19 +81,59 @@ html {
     font-weight: 500;
 }
 
-/* Responsive */
-/* @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-    }
+/* banner */
+.banner-section {
+    padding: 40px 0;
+    margin-top: 100px;
+}
 
-    .nav-links {
-        gap: 20px;
-    }
-} */
+.banner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
 
+.banner-img img {
+    width: 400px;
+    max-width: 100%;
+    display: block;
+    border-radius: 0;
+}
+
+.banner-text {
+    flex: 1;
+}
+
+.banner-text h1 {
+    font-size: 3rem;
+    margin: 0 0 20px 0;
+    line-height: 1.1;
+    font-family: "Noto Serif", serif;
+}
+
+.bold {
+    font-weight: 700;
+    color: #222;
+}
+
+.orange {
+    color: #E95A08;
+    font-weight: 700;
+}
+
+.paragraph {
+    color: #8987A1;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    max-width: 500px;
+    font-weight: 400;
+}
+
+
+/* responsive */
 @media (max-width: 576px) {
     .navbar {
         flex-direction: row;
@@ -107,10 +148,35 @@ html {
 
     .nav-links {
         display: none;
-        /* Hide links on mobile for simplicity */
     }
 
     .cart {
         font-size: 0.95rem;
+    }
+
+    /* banner part */
+    /* .banner-section {
+            padding: 16px 0;
+        } */
+
+    .banner-container {
+        padding: 0 8px;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 24px;
+        padding: 0 16px;
+    }
+
+    .banner-text h1 {
+        font-size: 1.4rem;
+    }
+
+    .paragraph {
+        font-size: 1rem;
+    }
+
+    .banner-img img {
+        width: 100%;
+        max-width: 100%;
     }
 }
